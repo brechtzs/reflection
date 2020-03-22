@@ -19,6 +19,7 @@ namespace DynamicCodeDemo
             string stringToBeEncoded = "fsdhdfgdjhsfgdjhsfgk 77 && <>";
             Console.WriteLine(stringToBeEncoded);
 
+            //??? 1st parameter - object the method is invoked on?
             string encodedString = (string)encode.Invoke(null, new object[] { stringToBeEncoded });
             Console.WriteLine(encodedString);
 
@@ -26,8 +27,7 @@ namespace DynamicCodeDemo
             Console.WriteLine(decodedString);
 
             Console.ReadLine();
-
-            
+ 
         }
     }
 }
